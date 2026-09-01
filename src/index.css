@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  /* Keeps anchored/in-page targets from hiding behind the sticky header */
+  scroll-padding-top: 96px;
+}
+
+/* Hide scrollbar across browsers while keeping scroll functionality */
+html,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #F7F2E9;
+  color: #1B1815;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #E1631F;
+  color: #F7F2E9;
+}
+
+:focus-visible {
+  outline: 2px solid #E1631F;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+}
+
+/* Paw-print scattered background texture */
+.paw-texture {
+  background-image: radial-gradient(circle, #1B1815 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px #1B1815;
+  color: transparent;
+}
