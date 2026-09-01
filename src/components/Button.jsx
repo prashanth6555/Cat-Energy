@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 
-/**
- * Reusable button/link component.
- * variant: "primary" | "outline" | "ghost"
- */
 export default function Button({
   children,
   to,

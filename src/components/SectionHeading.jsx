@@ -1,9 +1,6 @@
 import Reveal from "./Reveal";
 
-/**
- * eyebrow: optional small kicker (sentence case, not tracked-out caps)
- * align: "left" | "center"
- */
+
 export default function SectionHeading({
   eyebrow,
   title,

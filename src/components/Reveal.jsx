@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 
-/**
- * Wraps children in a subtle scroll-triggered reveal.
- * Kept deliberately restrained: fade + short rise, once per element.
- */
+
 export default function Reveal({
   children,
   delay = 0,

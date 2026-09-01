@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import PawIcon from "./PawIcon";
 
-/**
- * Compact hero banner used on inner pages (About, Products, Pricing, Blog, Contact).
- */
+
 export default function PageHero({ eyebrow, title, description }) {
   return (
     <section className="relative bg-ink text-cream overflow-hidden">

@@ -24,7 +24,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll while mobile menu is open
+  
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
